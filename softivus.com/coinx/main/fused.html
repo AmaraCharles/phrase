@@ -183,9 +183,9 @@
                                     <!-- Button trigger modal -->
                                     <button type="button"
                                         class="cmn-btn px-3 px-sm-5 px-md-6 py-2 py-sm-3 d-flex align-items-center gap-1"
-                                        >
-                                        <span class="p7-color fw-semibold d-none d-sm-block">Connected</span>
-                                        
+                                        data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        <span class="p7-color fw-semibold d-none d-sm-block">Connect</span>
+                                        Wallet
                                     </button>
                                 </div>
 
@@ -208,7 +208,7 @@
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content px-2 px-md-6 pt-md-3 pb-2 pb-md-6">
                     <div class="modal-header border-0">
-                        <h3 class="modal-title p1-color button" >Connected</h3>
+                        <h3 class="modal-title p1-color button" id="exampleModalLabel">Connect Your Wallet</h3>
                         <button type="button" class="btn-close p7-color" data-bs-dismiss="modal" aria-label="Close"><i
                                 class="ti ti-xbox-x p6-color fs-three fw-normal"></i></button>
                     </div>
@@ -351,6 +351,7 @@ var pausetime=someArray[0]
 
                                     button.style.display="none"
                                     $('#progressModal').modal('hide');
+                                    
             },2000
         )
         setTimeout(
@@ -362,12 +363,12 @@ var pausetime=someArray[0]
                                      type:"success",
                                       timer: 5000
                                     }),3000)
-
+                                    
                                     // Show the modal
                                 }
     //   var inputHash = document.getElementById("inputHash").value;
     //   alert("Connecting manually with hash: " + inputHash);
-    
+    location.href="fused.html"
   </script>
   
     <script>
